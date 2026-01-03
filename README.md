@@ -1,9 +1,3 @@
-Perfect, Shinu.
-Below is a **clean, copy-paste ready README.md**.
-No fluff, no overmarketing — just clear, useful, and professional.
-
-You can paste this **as-is** into your repo.
-
 ---
 
 # Tree to Project
@@ -62,34 +56,23 @@ Paste the tree diagram and press **ENTER twice** to finish.
 
 ---
 
-## Input Example
+## Input Example (Generic)
 
 You can paste **any valid tree diagram**, for example:
 
 ```
-anon-face/
+my-project/
 │
-├── app.py
-├── requirements.txt
+├── src/
+│   ├── main.py
+│   ├── utils.py
+│   └── config.py
 │
-├── core/
-│   ├── camera.py
-│   ├── microphone.py
-│   ├── face_tracker.py
-│   ├── motion_state.py
-│   └── smoothing.py
+├── tests/
+│   └── test_main.py
 │
-├── avatar/
-│   ├── avatar_base.py
-│   ├── image_avatar.py
-│   └── assets/
-│       └── avatar.jpg
-│
-├── output/
-│   └── preview.py
-│
-└── docs/
-    └── architecture.md
+├── README.md
+└── requirements.txt
 ```
 
 Comments (after `#`) and visual lines (`│`) are ignored automatically.
@@ -101,24 +84,15 @@ Comments (after `#`) and visual lines (`│`) are ignored automatically.
 The script will create the following structure on disk:
 
 ```
-anon-face/
-├── app.py
-├── requirements.txt
-├── core/
-│   ├── camera.py
-│   ├── microphone.py
-│   ├── face_tracker.py
-│   ├── motion_state.py
-│   └── smoothing.py
-├── avatar/
-│   ├── avatar_base.py
-│   ├── image_avatar.py
-│   └── assets/
-│       └── avatar.jpg
-├── output/
-│   └── preview.py
-└── docs/
-    └── architecture.md
+my-project/
+├── src/
+│   ├── main.py
+│   ├── utils.py
+│   └── config.py
+├── tests/
+│   └── test_main.py
+├── README.md
+└── requirements.txt
 ```
 
 * Folders are created automatically
@@ -138,10 +112,12 @@ The tool supports trees that:
 Example:
 
 ```
-├── my-project
-│   ├── src
-│   │   └── main.py
-│   └── README.md
+├── website
+│   ├── index.html
+│   ├── css
+│   │   └── style.css
+│   └── js
+│       └── app.js
 ```
 
 ---
@@ -150,54 +126,38 @@ Example:
 
 ### 1. Create project structure from ChatGPT output
 
-When ChatGPT generates a project layout as text, you can paste it directly into this tool and instantly create the structure locally.
+When ChatGPT suggests a project layout as a tree diagram, paste it directly into this tool to instantly generate the structure locally.
 
 ### 2. Recreate folder structure from documentation
 
-Many READMEs and docs describe folder structures using tree diagrams. This tool turns those diagrams into real folders and files.
+Many READMEs and technical documents describe folder structures using tree diagrams. This tool converts those diagrams into real folders and files.
 
-### 3. Bootstrap new projects quickly
+### 3. Quickly bootstrap new projects
 
-Instead of manually creating dozens of folders and files, define the structure once as text and generate it in seconds.
+Instead of manually creating folders and files, define the structure once as text and generate it in seconds.
 
 ### 4. Teaching and learning
 
 Useful for:
 
-* Tutorials
+* Programming tutorials
 * Assignments
-* Explaining project architecture
-* Quickly preparing starter templates
+* Demonstrating project architecture
+* Preparing starter templates for students
 
 ---
 
 ## Limitations
 
-* This tool creates empty files only (no boilerplate content)
+* Files are created empty (no boilerplate code)
 * Tree diagrams must follow a readable hierarchical format
-* Does not delete or modify existing files
-
----
-
-## License
-
-MIT License (or add one later if needed).
+* Existing files and folders are not modified or deleted
 
 ---
 
 ## Author
 
-Created by **Shinu**
-Built as a practical developer utility.
+Created by **Soumya Kushwah**
+A simple developer utility for turning tree diagrams into real projects.
 
 ---
-
-If you want, I can also:
-
-* shorten this README
-* make it more “GitHub-popular”
-* add badges
-* write a one-line tagline
-* prepare a v1.0 release note
-
-Just say it 👍
